@@ -24,6 +24,23 @@ export const definitions: DefinitionWithExtend[] = [
     //         await reporting.temperature(endpoint);
     //     },
     // },
+
+    {
+        zigbeeModel: ["leakSMART Water Sensor V2"],
+        model: "leakSMART-Water-Sensor-V2",
+        vendor: "Waxman",
+        description: "leakSMART water sensor v2 (battery + temperature only)",
+        fromZigbee: [fz.battery, fz.temperature],
+        toZigbee: [],
+        exposes: [e.battery(), e.temperature()],
+        configure: async (device, coordinatorEndpoint) => {
+            const endpoint = device.getEndpoint(1);
+            await reporting.bind(endpoint, coordinatorEndpoint, ["genPowerCfg", "msTemperatureMeasurement"]);
+            await reporting.batteryPercentageRemaining(endpoint);
+            await reporting.temperature(endpoint);
+        },
+    },
+
     {
         zigbeeModel: ["House Water Valve - MDL-TBD", "leakSMART Water Valve v2.10"],
         // Should work with all manufacturer model numbers for the 2.0 series:
