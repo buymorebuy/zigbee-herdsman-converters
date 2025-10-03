@@ -1,5 +1,16 @@
 # Changelog
 
+## [25.37.1](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v25.37.0...v25.37.1) (2025-10-03)
+
+
+### Bug Fixes
+
+* Bosch: fix unset attributes in `expose` functions due to cluster rename ([#10164](https://github.com/Koenkk/zigbee-herdsman-converters/issues/10164)) ([ca3dd57](https://github.com/Koenkk/zigbee-herdsman-converters/commit/ca3dd57f921ca6bddfa1731c29cee3c92cfcf18b))
+* **detect:** Detect `_TZ3002_jn2x20tg` as BSEED EC-GL86ZPCS11 ([#10157](https://github.com/Koenkk/zigbee-herdsman-converters/issues/10157)) ([32639c9](https://github.com/Koenkk/zigbee-herdsman-converters/commit/32639c9d23c483b480b3801bfc23e4cf0697a941))
+* **detect:** Detect `_TZE284_idn2htgu` as Tuya F3-Pro https://github.com/Koenkk/zigbee-herdsman-converters/pull/10121 ([c227015](https://github.com/Koenkk/zigbee-herdsman-converters/commit/c227015df7d56b8d99ff560228fa3b3ee620eaf7))
+* SONOFF MINI-ZBRBS: wrong OPEN/CLOSE State ([#10154](https://github.com/Koenkk/zigbee-herdsman-converters/issues/10154)) ([0f787ae](https://github.com/Koenkk/zigbee-herdsman-converters/commit/0f787aecb1fc85230d9c1d70d90aa8c04d4490f2))
+* Tuya TS011F_5: add unit to distance and improve description ([#10163](https://github.com/Koenkk/zigbee-herdsman-converters/issues/10163)) ([0877e59](https://github.com/Koenkk/zigbee-herdsman-converters/commit/0877e597eff5ba88e418e773cd25f586e683b8d4))
+
 ## [25.37.0](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v25.36.0...v25.37.0) (2025-10-02)
 
 
